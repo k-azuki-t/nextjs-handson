@@ -1,10 +1,15 @@
-'use client'
+'use client';
 
-export default function ClientComponent() {
-    console.log('client')
+import { useState } from 'react';
+
+export default function ServerComponent() {
+    console.log('Client');
+    const [count, setCount] = useState(0);
+
   return (
     <div>
-      クライアント
+        クライアント
+        <button onClick={() => setCount(count + 1)}>Count: {count}</button>
     </div>
   )
 }
