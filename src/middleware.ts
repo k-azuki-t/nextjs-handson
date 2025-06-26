@@ -1,8 +1,8 @@
 // ページを表示する前に実行したい処理を記述
 import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+// import type { NextRequest } from "next/server";
 
-export function middleware(request: NextRequest) {
+export function middleware() {
   // if (!request.nextUrl.pathname.includes('.')) {
   //   console.log('ミドルウェアのテスト');
   // }

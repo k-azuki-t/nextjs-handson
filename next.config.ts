@@ -7,6 +7,12 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "images.unsplash.com",
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.dog.ceo',
+        // 省略可: パスをもっと絞りたい場合
+        // pathname: '/breeds/**'
       }
     ]
   }
